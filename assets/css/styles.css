@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/bg.png");
+  color: white;
+}
+
+.jumbotron {
+  background: none;
+}
+
+.left {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  display: inline-block;
+}
+
+.left a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.right {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.container {
+  margin: 50px 50px;
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+h1 {
+  text-shadow: 1px 1px 4px #000;
+}
+
+.intro-name {
+  flex-direction: column;
+}
+
+.btn-outline-square {
+  border: 3px solid #215c8f;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.btn {
+  margin: 0px 15px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-group a:hover {
+  background-color: #215c8f;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.icon-group a
+{
+    margin: 5px 5px;
+    color: #fff;
+    font-size:30px;
+}
+
+.icon-group a:hover
+{
+   
+    color:  #215c8f;
+}
