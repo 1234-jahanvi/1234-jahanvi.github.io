@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jahanvi Agrawal</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    </link>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <script
       src="https://kit.fontawesome.com/1964234dc5.js"
@@ -15,79 +14,218 @@
     ></script>
   </head>
   <body>
-    <header class="jumbotron">
-      <div class="left">
-        <a href="#">Jahanvi Agrawal</a>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="Navbar">
+          <ul class="navbar-nav ">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio-section">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="right">
-        <ul class="navbar">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    </nav>
+
+    <header class="jumbotron" id="home">
+      <div class="container ">
+        <div class="row row-header" id="introduction">
+          <div class="col-12">
+            <h1><strong>Hi! I'm Jahanvi Agrawal.</strong></h1>
+            <h2>Second year undergraduate student at IIITB</h2>
+          </div>
+          <div class="col-12 btn-group">
+            <a role="button" class="btn btn-outline-square" href="#portfolio-section">Portfolio</a>
+            <a role="button" class="btn btn-outline-square" href="#contact-section">Contact</a>
+            <br>
+          </div>
+          <div class="col-12 icon-group">
+            <a href="https://github.com/1234-jahanvi" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jahanvi-agrawal-a861171ab" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
       </div>
     </header>
-    <div id="introduction" class="container">
-      <div class="row intro-name">
-        <h1><strong>Hi! I'm Jahanvi Agrawal.</strong></h1>
-        <br />
-        <h2>Developer</h2>
-      </div>
-      <div class="row btn-group">
-        <a role="button" class="btn btn-outline-square" href="#">Portfolio</a>
-        <a role="button" class="btn btn-outline-square" href="#">Contact</a>
-      </div>
-      <div class="row icon-group">
-        <a href="https://github.com/1234-jahanvi" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/jahanvi-agrawal-a861171ab"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-      </div>
-    </div>
-    <div id="about">
-      <div id="about-section">
-        <div class="row profile-pic">
-          <img
-            src="./assets/images/profile-pic.jpeg"
-            alt="Jahanvi"
-            width="400px"
-          />
+
+    <div class="container" id="about-section">
+      <div class="row row-content align-items-center">
+        <div class="col-12 col-md-5 justify-items-center" id="profile-pic">
+          <img src="./assets/images/profile-pic.jpeg" alt="Jahanvi" class="image center"/>
         </div>
-        <div class="row about-text">
-          <div class="about-title">
-            <small>A little</small>
-            <h1>About me</h1>
-            <div class="underline-section"></div>
-          </div>
+        <div class="col-12 col-md justify-items-center" id="about-text">
+          <small>A little</small>
+          <h1>About me</h1>
+          <div class="underline-section"></div>
           <p>
-            Currently studying as a 2nd year undergraduate student at
-            International Institute of Information Technology, Bangalore, I am a
-            highly motivated & passionate female engineering student wanting to
-            make meaningful career in the field of information technology. With
+            Currently studying as a 2nd year ECE undergraduate student at
+            International Institute of Information Technology, Bangalore, with
             an aim to hone my skills in the field of web-development and coding,
             in my first year, I began learning and building basic projects using
             HTML, CSS and JavaScript. Then, I went on further using more
-            advanced frameworks and technologies like React, Sass and Bootstrap
+            advanced frameworks and technologies like React, Sass and Bootstrap,
             to take my websites to the next level. With a plan to explore my
             passion in this field, I want to keep on designing websites and
             learn new frameworks.
           </p>
-          <a
-            role="button"
-            class="btn"
-            href="./assets/Jahanvi_Agrawal_Resume.pdf"
-            target="_blank"
-            >My Resume</a
-          >
+          <a role="button" class="btn" href="./assets/media/Jahanvi_Agrawal_Resume.pdf" target="_blank">My Resume</a>
         </div>
       </div>
     </div>
 
+    <div class="container" id="portfolio-section">
+      <div id="portfolio-title">
+        <small>Projects</small>
+        <h2><b>Portfolio</b></h2>
+        <div class="underline-section"></div>
+      </div>
+      <div class="row row-content align-items-center portfolio-item">
+        <div class="col-12 col-md-5 justify-items-center portfolio-pic">
+          <img src="./assets/images/pomodoro.png" alt="pomodoro" class="image center" />
+        </div>
+        <div class="col-12 col-md justify-items-center" id="about-text">
+          <h2>POMODORO CLOCK Web Application</h2>
+          <span class="badge badge-pill badge-secondary">HTML</span>
+          <span class="badge badge-pill badge-secondary">CSS</span>
+          <span class="badge badge-pill badge-secondary">Advanced JavaScript</span>
+          <p>
+            A simple website that allows students to study in small timeframes with planned breaks. The idea behind this technique is called as The Pomodoro Technique . The basics of this technique is that you break all of your work
+            sessions into 25-minute chunks, separated by regular short breaks. With the use of Advanced JavaScript, I implemented the clock feature with default settings of 25-minutes work sessions followed by 5-minutes break session. The user is gien the freedom to edit this according to their need.
+            <br> So, Go Ahead and Pomo-Do-It!
+          </p>
+          <a role="button" class="btn" href="https://github.com/1234-jahanvi/POMODORO-CLOCK" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a role="button" class="btn" href="./assets/media/Pomodoro/pomodoro.html" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="row row-content align-items-center portfolio-item">
+        <div class="col-12 col-md-5 justify-items-center" id="profile-pic">
+          <img src="./assets/images/watchOut.png" alt="watchOut" class="image center" />
+        </div>
+        <div class="col-12 col-md justify-items-center" id="about-text">
+          <h2>WATCH OUT!</h2>
+          <span class="badge badge-pill badge-secondary">HTML</span>
+          <span class="badge badge-pill badge-secondary">CSS</span>
+          <span class="badge badge-pill badge-secondary">JavaScript</span>
+          <p>
+            Being one of my first game-based application built using JavaScript, in my first year of college, this is a simplified derivative of the game ‘Flappy Bird’. 
+            This game has a ball which should escape the spikes and reach the end of the frame. As this was my teammate's and mine first-ever Javascript based project, we used it to successfully create interactive ball and spikes in the game.
+          <br> So watch out for the spikes!!
+          </p>
+          <a role="button" class="btn" href="https://github.com/zense/Canvas-Competition/tree/HacKnight2K19/watchOut" target="_blank"><i
+              class="fab fa-github"></i> Code</a>
+          <a role="button" class="btn" href="./assets/media/watchOut/index.html" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="row row-content align-items-center portfolio-item">
+        <div class="col-12 col-md-5 justify-items-center" id="profile-pic">
+          <img src="./assets/images/gameShow.jpg" alt="" class="image center" />
+        </div>
+        <div class="col-12 col-md justify-items-center" id="about-text">
+          <h2>Multiplayer GAME SHOW</h2>
+          <span class="badge badge-pill badge-secondary">Python3</span>
+          <span class="badge badge-pill badge-secondary">Socket Programming</span>
+          <p>
+            This is a simple implementation of a multiplayer quiz or a game-show implemented using Python3 and the concepts of Socket Programming. 
+            Here, we have a host (a server who is responsible for conducting the quiz) and players ( the other users who need to answer questions).
+            <br>Make sure you try this out!!
+          </p>
+          <a role="button" class="btn" href="https://github.com/1234-jahanvi/Socket-Programming"
+            target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="skills-section">
+      <div id="skills-title">
+        <small>What I know</small>
+        <h2><b>My Skills</b></h2>
+        <div class="underline-section"></div>
+      </div>
+      <div class="row row-content skills-container">
+        <div class="box">
+          <img src="./assets/images/html.svg" alt="html">
+          <p>HTML</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/css.svg" alt="css">
+            <p>CSS</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/bootstrap.svg" alt="bootstarp">
+            <p>Bootstrap</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/javascript.svg" alt="js">
+            <p>JavaScript</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/react.svg" alt="react">
+            <p>React</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/mongo.svg" alt="mongo">
+            <p>MongoDB</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/node.svg" alt="node">
+            <p>Nodejs</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/npm.svg" alt="npm">
+            <p>npm</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/java.svg" alt="Java">
+            <p>Java</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/python.svg" alt="python">
+            <p>Python</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/c2.png" alt="C" width="50%" height="100px" id="c">
+            <p>C</p>
+          </div>
+          <div class="box">
+            <img src="./assets/images/c++.jpg" alt="c++">
+            <p>C++</p>
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="container" id="contact-section">
+      <div id="contact-title">
+        <small>Let's talk!</small>
+        <h2><b>Contact Me</b></h2>
+        <div class="underline-section"></div>
+      </div>
+      <div id="contact-info">
+        <div class="email"><i class="fa fa-envelope fa-lg icons"></i> : <a href="mailto:Jahanvi.Agrawal@iiitb.org">Jahanvi.Agrawal@iiitb.org</a>
+        </div>
+        <div class="icons">
+        <a href="https://github.com/1234-jahanvi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jahanvi-agrawal-a861171ab" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/jahanvi.agrawal.33" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/jahanvi_32/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Designed and created by Jahanvi Agrawal © 2021</p>
+  </footer>
+
+
+    
+
+
+    
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
