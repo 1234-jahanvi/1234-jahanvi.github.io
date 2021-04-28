@@ -105,12 +105,12 @@ body {
   margin-top: -6.5px;
 }
 
-#about-text {
+.about-text {
   margin-right: auto;
   margin-left: 20px;
 }
 
-#about-text a {
+.about-text a {
   margin-left: 0px;
   border: 3px solid black;
   border-radius: 5px;
@@ -120,7 +120,7 @@ body {
   text-align: center;
 }
 
-#about-text a:hover {
+.about-text a:hover {
   border: 3px solid rgb(165, 163, 163);
   border-radius: 5px;
   background-color: black;
@@ -257,7 +257,7 @@ small {
   padding: 5px;
 }
 
-.footer-section{
-  color:  #2a68aa;
-  padding:5px;
+.footer-section {
+  color: #2a68aa;
+  padding: 5px;
 }
