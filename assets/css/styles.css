@@ -210,8 +210,9 @@ small {
   justify-content: center;
 }
 
-.box #c {
-  margin: auto;
+.box p
+{
+  justify-content: bottom;
 }
 
 #portfolio-title h2 {
